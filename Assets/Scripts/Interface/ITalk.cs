@@ -1,0 +1,1 @@
+﻿public interface ITalk{    public void ChangeInkVariableInUnity(string nameVariable, bool value);    public void PlaySound(string nameClip);}
