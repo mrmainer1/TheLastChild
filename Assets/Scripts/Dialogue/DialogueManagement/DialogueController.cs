@@ -36,7 +36,7 @@ public class DialogueController : MonoBehaviour
     public void EnterDialogueMode(Story story, ITalk collocutor)
     {
         Collocutor = collocutor;
-        player.StopMove();
+        player.StopMovement();
         
         CurrentStory = story;
         _dialogueWindow.SetActive(true);
@@ -66,7 +66,7 @@ public class DialogueController : MonoBehaviour
     {
         yield return new WaitForSeconds(_dialogueWindow.CooldownNewLetter);
         
-        player.StartMove();
+        player.StartMovement();
         _dialogueWindow.SetActive(false);
         _dialogueWindow.ClearText();
     }

@@ -10,13 +10,13 @@ VAR isGaveBread = true
 -> END
 
 === Question ===
-+ [Спросить про возраст] А сколько тебе лет? #speaker: Алие #anim: Talk
++ [узнать возраст] А сколько тебе лет? #speaker: Алие #anim: Talk
     Мне вот-вот исполнится 13. #speaker: Арсений
     -> Question
 
 + [Помочь] Тебе с чем-нибудь помочь? #speaker: Алие #anim: Talk
     {isGaveBread:
-    Нет, ты мне уже достаточно сделала! #speaker: Арсений
+    Нет, ты уже сделала, достаточно. #speaker: Арсений
     -> Question
 - else:
 Отнесешь маме хлеб? #speaker: Арсений
